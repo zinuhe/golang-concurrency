@@ -15,7 +15,7 @@ func main (){
     go func() {
         for {
             time.Sleep(time.Second / 2)
-            out1 <- "oder processed, half second"  //You will see this twice in the output for each of out2
+            out1 <- "oder processed, half second"  // You will see this twice in the output for each of out2
         }
     }()
 
@@ -28,9 +28,9 @@ func main (){
 
     for {
         select {
-        case msg := <- out1:  //If channel 1 has data ready it will go out
+        case msg := <- out1:  // If channel 1 has data ready it will go out
             fmt.Println(msg)
-        case msg := <- out2:  //If channel 2 has data ready it will go out
+        case msg := <- out2:  // If channel 2 has data ready it will go out
             fmt.Println(msg)
         }
     }
