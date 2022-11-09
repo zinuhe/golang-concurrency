@@ -9,3 +9,5 @@ External links <br>
 [thread-safety issues](https://golongwithgolang.com/thread-safety-in-golang)
 [concerns](https://pmihaylov.com/thread-safety-concerns-go/)
 
+## Other examples
+[The Pipeline (reader → processor(s) → combiner)](https://medium.com/@snassr/processing-large-files-in-go-golang-6ea87effbfe2)
